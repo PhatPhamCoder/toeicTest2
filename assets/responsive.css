@@ -1,49 +1,71 @@
-/* DESKTOP */
-@media only screen and (min-width: 1200px) {
-    .subtitle {
-        font-size: 21px;
-    }
-}
-
-/* TABLET */
-@media screen and (min-width:768px) and (max-width: 1023px) {
-    .title {
-        font-size: 7vw;
-    }
-    .subtitle {
-        font-size: 15px !important;
-    }
-    .live{
-        vertical-align: middle;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    [class*="col-"] {
-      width: 100%;
-    }
+/* Large Desktop */
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1370px;
   }
-/* SMARTPHONE */
-@media only screen and (max-width: 600px) {
-    .title {
-        font-size: 4vw;
-        line-height: 15vw;
-    }
-    .subtitle {
-        font-size: 16px !important;
-        padding: 0;
-    }
-
-    .box-test{
-        margin-top: 20px;
-    }
+  .subtitle {
+    font-size: 21px;
+  }
 }
 
-@media (min-width: 1200px)
-{
-    .container {
-        max-width: 1370px;
-    }
+/* Desktop */
+@media screen and (min-width: 1024px) and (max-width: 1399px) {
+  .container {
+    max-width: 1140px;
+  }
+  .subtitle {
+    font-size: 18px;
+  }
 }
 
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    max-width: 960px;
+  }
+  .title {
+    font-size: 7vw;
+  }
+  .subtitle {
+    font-size: 15px;
+  }
+  .live {
+    vertical-align: middle;
+  }
+}
+
+/* Large Mobile */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+  .title {
+    font-size: 5vw;
+    line-height: 12vw;
+  }
+  .subtitle {
+    font-size: 16px;
+    padding: 0;
+  }
+  .box-test {
+    margin-top: 20px;
+  }
+}
+
+/* Small Mobile */
+@media screen and (max-width: 480px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+  .title {
+    font-size: 4vw;
+    line-height: 15vw;
+  }
+  .subtitle {
+    font-size: 14px;
+    padding: 0;
+  }
+  .box-test {
+    margin-top: 20px;
+  }
+}

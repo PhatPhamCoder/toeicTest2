@@ -1,65 +1,97 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Test 2024</title>
 
-<head>
-  <title>Final Test 2023</title>
-  <link rel="icon" type="image/png" sizes="100x100" href="./assets/image/icon.png" />
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
-  <meta property="og:image"
-    content="https://mailam.edu.vn/uploads/images/social/2021/10/thumb/615700b494635-social.png">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="THI THỬ TOEIC | MAI LÂM ENGLISH">
-  <meta property="og:url" content="https://mailam.edu.vn/">
-  <meta property="og:description" content="Chương trình thi thử TOEIC 2023">
-  <link rel="stylesheet" type="text/css" href="./assets/style.css" />
-  <link rel="stylesheet" type="text/css" href="./assets/audio.css" />
-  <link rel="stylesheet" type="text/css" href="./assets/responsive.css" />
-  <div class="topbar">
-    <p><a href="https://mailam.edu.vn/">Final Test 2023
-        <script>new Date().getFullYear() > 2012 && document.write(new Date().getFullYear());</script>
-      </a></p>
-  </div>
-  <!-- Thong bao pupup -->
-  <div class="tbpopup" id="tbpopup-1">
-    <div class="tboverlay"></div>
-    <div class="tbcontent">
-      <div class="tbclose-btn" onclick="thongbaopopup()">&times;</div>
-      <div style="font-size: 30px; font-weight: bold; color: red">Lưu ý thí sinh</div>
-      <p font-size:30px>
-        Thí sinh vui lòng đăng nhập vô Form điền câu trả lời trước khi thực hiện bài thi để tránh
-        sự cố đáng tiếc trong quá trình làm bài. Xin cảm ơn và chúc bạn làm bài thật tốt!
+    <!-- Meta tags -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="THI THỬ TOEIC | MAI LÂM ENGLISH" />
+    <meta property="og:url" content="https://mailam.edu.vn/" />
+    <meta property="og:description" content="Chương trình thi thử TOEIC 2023" />
+    <meta
+      property="og:image"
+      content="https://mailam.edu.vn/uploads/images/social/2021/10/thumb/615700b494635-social.png"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="100x100"
+      href="./assets/image/icon.png"
+    />
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/audio.css" />
+    <link rel="stylesheet" href="./assets/responsive.css" />
+  </head>
+
+  <body onload="thongbaopopup()">
+    <!-- Loading indicators -->
+    <div id="status"></div>
+    <div id="loader"></div>
+
+    <!-- Header -->
+    <div class="topbar">
+      <p>
+        <a href="https://mailam.edu.vn/">
+          Final Test <span id="currentYear"></span>
+        </a>
       </p>
     </div>
-  </div>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-</head>
 
-<body>
+    <!-- Popup notification -->
+    <div class="tbpopup" id="tbpopup-1">
+      <div class="tboverlay"></div>
+      <div class="tbcontent">
+        <div class="tbclose-btn" onclick="thongbaopopup()">&times;</div>
+        <h2 class="warning-title">Lưu ý thí sinh</h2>
+        <p class="warning-text">
+          Thí sinh vui lòng đăng nhập vô Form điền câu trả lời trước khi thực
+          hiện bài thi để tránh sự cố đáng tiếc trong quá trình làm bài. Xin cảm
+          ơn và chúc bạn làm bài thật tốt!
+        </p>
+      </div>
+    </div>
 
-  <body onload="thongbaopopup()"></body>
-  <div id="status"></div>
-  <div id="loader"></div>
-
-  <div id="content">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="item">
-            <iframe src="https://drive.google.com/file/d/1yBiVGb5V_N6glP8Cq0nxsWVyUncMbTz0/preview" width="100%"
-              height="680px"></iframe>
+    <!-- Main content -->
+    <div id="content">
+      <div class="container">
+        <div class="row">
+          <!-- PDF Viewer -->
+          <div class="col-md-6">
+            <div class="item">
+              <iframe
+                src="https://drive.google.com/file/d/1X1kv2fDIxcwfrP4PhF6qx8zCtRVLb8YA/preview"
+                width="100%"
+                height="680"
+              ></iframe>
+            </div>
           </div>
-        </div>
-        <div class="col-md-6 box-test">
-          <div class="item">
-            <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLSdzIWuknDmFYLcNbHoGaFCJIAtdkbG6caIpf_gRTYnjGJmQSA/viewform?embedded=true"
-              width="100%" height="600px" frameborder="0" marginheight="0" marginwidth="0">Đang tải…
-            </iframe>
-          </div>
-          <div class="item">
-            <div class="row">
+
+          <!-- Answer Form -->
+          <div class="col-md-6 box-test">
+            <div class="item">
+              <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSefeAscEqk8nmCJnV99RbMQfuYnzHaoF0SMI8zW8_DePMf8_g/viewform?embedded=true"
+                width="100%"
+                height="600"
+              ></iframe>
+            </div>
+
+            <!-- Audio Player -->
+            <div class="item">
               <div id="station0" class="station">
                 <div class="title">
                   <div id="title0" class="subtitle"></div>
@@ -78,100 +110,72 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="footer_root">
-    <p>Copyright &copy;
-      <script>new Date().getFullYear() > 2012 && document.write(new Date().getFullYear());</script>, EDUCATIONAL
-      TESTING SERVICE.
-    </p>
-  </div>
 
-  <!-- Scripts -->
-  <script>
-    // Cảnh báo người dùng load lại trang đang làm bài
-    window.onbeforeunload = function () {
-      window.alert("Dude, are you sure you want to leave? Think of the kittens!");
-      return true;
-    };
+    <!-- Footer -->
+    <footer class="footer_root">
+      <p>
+        Copyright &copy; <span id="footerYear"></span>, EDUCATIONAL TESTING
+        SERVICE.
+      </p>
+    </footer>
 
-    // Vô hiệu hóa chuột phải
-    $(document).ready(function () {
-      $("body").on("contextmenu", function (e) {
-        return false;
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="./assets/src/howler.core.js"></script>
+    <script src="./assets/file-audio/radio.js"></script>
+
+    <script>
+      // Update year displays
+      document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
+      document.getElementById("footerYear").textContent =
+        new Date().getFullYear();
+
+      // Page reload warning
+      window.onbeforeunload = () => true;
+
+      // Disable right-click
+      document.addEventListener("contextmenu", (e) => e.preventDefault());
+
+      // Disable keyboard shortcuts
+      document.addEventListener("keydown", function (e) {
+        // Disable Ctrl+Shift+I
+        if (e.ctrlKey && e.shiftKey && e.keyCode === 73) {
+          e.preventDefault();
+        }
+        // Disable Ctrl+Shift+J
+        if (e.ctrlKey && e.shiftKey && e.keyCode === 74) {
+          e.preventDefault();
+        }
+        // Disable Ctrl+S
+        if (
+          e.keyCode === 83 &&
+          (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)
+        ) {
+          e.preventDefault();
+        }
+        // Disable Ctrl+U
+        if (e.ctrlKey && e.keyCode === 85) {
+          e.preventDefault();
+        }
+        // Disable F12
+        if (e.keyCode === 123) {
+          e.preventDefault();
+        }
       });
-      $("iframe body").on("contextmenu", function (e) {
-        return false;
-      });
-    });
-    function killCopy(e) {
-      return false;
-    }
-    function reEnable() {
-      return true;
-    }
-    document.onselectstart = new Function("return false");
-    if (window.sidebar) {
-      document.onmousedown = killCopy;
-      document.onclick = reEnable;
-    }
-    // Vô hiệu hóa  các nút bấm
-    document.addEventListener(
-      "keydown",
-      function (e) {
-        //document.onkeydown = function(e) {
-        // "I" key
-        if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
-          disabledEvent(e);
-        }
-        // "J" key
-        if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
-          disabledEvent(e);
-        }
-        // "S" key + macOS
-        if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
-          disabledEvent(e);
-        }
-        // "U" key
-        if (e.ctrlKey && e.keyCode == 85) {
-          disabledEvent(e);
-        }
-        // "F12" key
-        if (event.keyCode == 123) {
-          disabledEvent(e);
-        }
-      },
-      false
-    );
 
-    function disabledEvent(e) {
-      if (e.stopPropagation) {
-        e.stopPropagation();
-      } else if (window.event) {
-        window.event.cancelBubble = true;
+      // Loading handler
+      window.addEventListener("load", () => {
+        document.getElementById("status").style.display = "none";
+        document.getElementById("loader").style.display = "none";
+      });
+
+      // Popup handler
+      function thongbaopopup() {
+        document.getElementById("tbpopup-1").classList.toggle("active");
       }
-      e.preventDefault();
-      return false;
-    }
-  </script>
-  <script src="./assets/src/howler.core.js"></script>
-  <script src="./assets/file-audio/radio.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-  <script>
-    //<![CDATA[
-    $(window).bind("load", function () {
-      jQuery("#status").fadeOut();
-      jQuery("#loader").fadeOut();
-    });
-      //]]>
-  </script>
-  <!-- js thong bao popup -->
-  <script>
-    function thongbaopopup() {
-      document.getElementById("tbpopup-1").classList.toggle("active");
-    }
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>
